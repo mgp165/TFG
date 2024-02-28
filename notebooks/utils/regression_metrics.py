@@ -22,8 +22,8 @@ def regression(list_models, list_names, path, X_train, y_train, X_test, y_test, 
         start_time = time.time()
         model.fit(X_train, y_train)
 
-        train_pred = model.predict(X_train)[:, 1]
-        test_pred = model.predict(X_test)[:, 1]
+        train_pred = model.predict(X_train)
+        test_pred = model.predict(X_test)
 
         metrics[name] = {
         'Train_MSE': mean_squared_error(y_train, train_pred),
