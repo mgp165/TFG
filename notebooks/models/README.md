@@ -7,4 +7,4 @@ In this directory, the first step is to select the best model of each algorithm 
   - RERF:
   - EBLR:
 
-When we have chosen the model, in the \emph{best} directories, we will re-fit it by hyperparameter tuning or scaling the data, getting then the final model to which we will pass the test data.
+When we have chosen the model, in the _best_ directories, we will re-fit it by hyperparameter tuning or scaling the data, getting then the final model to which we will pass the test data.
