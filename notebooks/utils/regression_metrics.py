@@ -26,9 +26,9 @@ def regression(list_models, list_names, path, X_train, y_train, X_test, y_test, 
         test_pred = model.predict(X_test)
 
         metrics[name] = {
-        'Train_MSE': mean_squared_error(y_train, train_pred),
-        'Test_MSE': mean_squared_error(y_test, test_pred),
-        'Run_Time': time.time() - start_time
+            'Train_MSE': mean_squared_error(y_train, train_pred),
+            'Test_MSE': mean_squared_error(y_test, test_pred),
+            'Run_Time': time.time() - start_time
         }
         
     metrics = pd.DataFrame.from_dict(metrics, orient='index',columns=['Run_Time', 'Train_MSE', 'Test_MSE'])

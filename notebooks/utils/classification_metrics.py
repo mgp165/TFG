@@ -26,9 +26,9 @@ def classification(list_models, list_names, path, X_train, y_train, X_test, y_te
         test_pred = model.predict_proba(X_test)[:, 1]
 
         metrics[name] = {
-        'Train_AUC': roc_auc_score(y_train, train_pred),
-        'Test_AUC': roc_auc_score(y_test, test_pred),
-        'Run_Time': time.time() - start_time
+            'Train_AUC': roc_auc_score(y_train, train_pred),
+            'Test_AUC': roc_auc_score(y_test, test_pred),
+            'Run_Time': time.time() - start_time
         }
         
     metrics = pd.DataFrame.from_dict(metrics, orient='index',columns=['Run_Time', 'Train_AUC', 'Test_AUC'])
