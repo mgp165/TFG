@@ -29,6 +29,6 @@ def classification(list_models, list_names, path, X_train, y_train, X_test, y_te
     metrics = pd.DataFrame.from_dict(metrics, orient='index',columns=['Run_Time', 'Train_AUC', 'Validation_AUC'])
     metrics['delta%'] = 100*(metrics.Validation_AUC - metrics.Train_AUC) / metrics.Train_AUC
     
-    metrics.to_parquet(path)
+    metrics.to_csv(path)
     
     return metrics

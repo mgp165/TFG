@@ -29,6 +29,6 @@ def regression(list_models, list_names, path, X_train, y_train, X_test, y_test, 
     metrics = pd.DataFrame.from_dict(metrics, orient='index',columns=['Run_Time', 'Train_MSE', 'Validation_MSE'])
     metrics['delta%'] = 100*(metrics.Validation_MSE - metrics.Train_MSE) / metrics.Train_MSE
     
-    metrics.to_parquet(path)
+    metrics.to_csv(path)
     
     return metrics
