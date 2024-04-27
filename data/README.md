@@ -12,6 +12,6 @@ There are 3 subfolders inside. Each one is intended for saving the training, val
 
 ## Model Output
 There are 2 subfolders:
-- **Metrics**: here there is a csv file per dataset containing running times, training and validation AUC/RMSE and deltas.
+- **Metrics**: here there is a csv file per dataset containing running times, training and validation AUC/RMSE and deltas for every model trained with each possible combination of hyperparameters. Files with name starting with *final* include the metrics of the best models that are retrained with train and validation datasets together.
 - **Models**: here are saved all the models with the best hyperparameters obtained in validation trained with train and validation datasets together.
 
