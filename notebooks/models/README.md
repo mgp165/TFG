@@ -1,3 +1,5 @@
+For each dataset, it has been trained a 
+
 # Notebooks structure
 
 The steps that are carried out in every notebook from this folder are the following:
