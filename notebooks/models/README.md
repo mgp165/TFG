@@ -1,7 +1,7 @@
-For each dataset, it has been trained a 
-
-# Notebooks structure
-
+## Models trained
+For each dataset, several models have been trained, each on a different notebook. Their names correspond to:
+- logistic_regression: a [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) model
+## Notebooks structure
 The steps that are carried out in every notebook from this folder are the following:
 
 1. Upload the corresponding train, validation and test data.
