@@ -1,6 +1,8 @@
 ## Models trained
 For each dataset, several models have been trained, each on a different notebook. Their names correspond to:
-- logistic_regression: a [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) model
+- logistic_regression: [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) models.
+- 
+  
 ## Notebooks structure
 The steps that are carried out in every notebook from this folder are the following:
 
